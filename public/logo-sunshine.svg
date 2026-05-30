@@ -1,0 +1,12 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#000000"/>
+  <g fill="#FF914D">
+    <path d="M488 190C383 190 312 260 312 366V416C312 505 372 560 474 560H652C689 560 714 582 714 616C714 649 689 672 652 672H475C453 672 436 689 436 711C436 733 453 751 475 751H570V771C570 793 588 811 610 811H689C767 811 832 747 832 669V621C832 533 773 477 671 477H493C456 477 431 455 431 421C431 388 456 365 493 365H692C714 365 731 347 731 325C731 304 714 286 692 286H639C618 286 601 269 601 248C601 226 618 209 639 209H690C710 209 727 192 727 171C727 150 710 134 690 134H488V190Z"/>
+    <rect x="708" y="135" width="78" height="55" rx="27.5"/>
+    <rect x="367" y="672" width="78" height="55" rx="27.5"/>
+  </g>
+  <g fill="#FF914D">
+    <text x="132" y="817" font-family="Arial Black, Arial, sans-serif" font-size="70" font-weight="900" letter-spacing="5">KEDAI</text>
+    <text x="260" y="900" font-family="Arial Black, Arial, sans-serif" font-size="78" font-weight="900" letter-spacing="8">SUNSHINE</text>
+  </g>
+</svg>

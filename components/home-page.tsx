@@ -159,7 +159,7 @@ const testimonials = [
   }
 ];
 
-const whatsappNumber = "6281234567890";
+const whatsappNumber = "6281227371024";
 
 function BrandLogo({ variant = "nav" }: { variant?: "nav" | "hero" | "footer" }) {
   const sizeClass =
@@ -639,7 +639,7 @@ function Location() {
             </p>
             <p className="flex gap-3">
               <Phone className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
-              WhatsApp: +62 812-3456-7890
+              WhatsApp: +62 812-2737-1024
             </p>
           </div>
           <a

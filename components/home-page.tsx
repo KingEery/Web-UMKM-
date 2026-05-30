@@ -24,7 +24,6 @@ import { useEffect, useMemo, useState } from "react";
 const navItems = [
   ["Tentang", "#tentang"],
   ["Menu", "#menu"],
-  ["Gallery", "#gallery"],
   ["Testimoni", "#testimoni"],
   ["Lokasi", "#lokasi"]
 ] as const;
@@ -102,44 +101,6 @@ const menuItems = [
   }
 ];
 
-const galleryItems = [
-  {
-    title: "Interior Cafe",
-    height: "h-72",
-    image:
-      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=85"
-  },
-  {
-    title: "Menu Hangat",
-    height: "h-96",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85"
-  },
-  {
-    title: "Nongkrong Sore",
-    height: "h-80",
-    image:
-      "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1000&q=85"
-  },
-  {
-    title: "Lighting Orange",
-    height: "h-64",
-    image:
-      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=85"
-  },
-  {
-    title: "Coffee Corner",
-    height: "h-80",
-    image:
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
-  },
-  {
-    title: "Table Moment",
-    height: "h-96",
-    image:
-      "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1000&q=85"
-  }
-];
 
 const testimonials = [
   {
@@ -528,41 +489,6 @@ function FeaturedMenu() {
   );
 }
 
-function Gallery() {
-  return (
-    <section id="gallery" className="bg-[#101010] px-5 py-24 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
-        <SectionTitle
-          eyebrow="Gallery"
-          title="Sudut hangat yang fotogenik"
-          description="Nuansa cafe aesthetic dengan lighting warm orange untuk makan, ngobrol, dan membuat konten yang terasa natural."
-        />
-        <div className="masonry">
-          {galleryItems.map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: index * 0.05, duration: 0.55 }}
-              className={`masonry-item group relative ${item.height} overflow-hidden rounded-2xl border border-white/10`}
-            >
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover transition duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-transparent" />
-              <p className="absolute bottom-4 left-4 text-lg font-black">{item.title}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Testimonials() {
   const [active, setActive] = useState(0);
@@ -748,7 +674,6 @@ export function HomePage() {
         <Hero />
         <About />
         <FeaturedMenu />
-        <Gallery />
         <Testimonials />
         <Location />
       </main>

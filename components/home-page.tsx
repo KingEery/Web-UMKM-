@@ -556,13 +556,13 @@ function Location() {
           <h2 className="text-3xl font-black sm:text-4xl">Datang dan rasakan suasananya</h2>
           <div className="mt-8 space-y-5 text-white/72">
             <a
-              href="https://maps.app.goo.gl/gB6SUje7kWUJC4fx7?g_st=iw"
+              href="https://maps.google.com/?q=G6R8%2B7XG+Kedai+sunshine88%2C+Jl.+Kapten+Suparman%2C+Potrobangsan%2C+Kec.+Magelang+Utara%2C+Kota+Magelang%2C+Jawa+Tengah+56116"
               target="_blank"
               rel="noreferrer"
               className="flex gap-3 transition-colors hover:text-sunshine-orange"
             >
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
-              <span>Jalan Kapten Suparman, Potrobangsan, Kecamatan Magelang Utara, Kota Magelang.</span>
+              <span>G6R8+7XG Kedai sunshine88, Jl. Kapten Suparman, Potrobangsan, Kec. Magelang Utara, Kota Magelang, Jawa Tengah 56116</span>
             </a>
             <div className="flex gap-3">
               <Clock className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
@@ -573,7 +573,7 @@ function Location() {
             </div>
             <p className="flex gap-3">
               <Phone className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
-              <span>WhatsApp: +62 812-2737-1024</span>
+              <span>WhatsApp: +62812-2737-1024</span>
             </p>
           </div>
           <a
@@ -595,7 +595,7 @@ function Location() {
         >
           <iframe
             title="Peta Kedai Sunshine88"
-            src="https://www.google.com/maps?q=Kedai%20sunshine88%2C%20Jl.%20Kapten%20Suparman%2C%20Potrobangsan%2C%20Kec.%20Magelang%20Utara%2C%20Kota%20Magelang&output=embed"
+            src="https://www.google.com/maps?q=G6R8%2B7XG%20Kedai%20sunshine88%2C%20Jl.%20Kapten%20Suparman%2C%20Potrobangsan%2C%20Kec.%20Magelang%20Utara%2C%20Kota%20Magelang%2C%20Jawa%20Tengah%2056116&output=embed"
             className="h-full min-h-[420px] w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -613,8 +613,8 @@ function Footer() {
         <BrandLogo variant="footer" />
         <div className="flex items-center gap-3">
           {[
-            { label: "Instagram", icon: Instagram, href: "https://instagram.com/" },
-            { label: "TikTok", icon: ChefHat, href: "https://tiktok.com/" },
+            { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/kedai.sunshine88?igsh=cGViNm02eHBsMTI4" },
+            { label: "TikTok", icon: ChefHat, href: "https://www.tiktok.com/@sunshine.ss88?_r=1&_t=ZS-96ozFwpS7Zk" },
             {
               label: "WhatsApp",
               icon: MessageCircle,

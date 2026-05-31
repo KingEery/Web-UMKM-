@@ -301,8 +301,8 @@ function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-black/55 p-5 backdrop-blur">
-                <p className="text-sm font-semibold text-sunshine-orange">Open Daily</p>
-                <p className="mt-1 text-2xl font-black">10.00 - 22.00 WIB</p>
+                <p className="text-sm font-semibold text-sunshine-orange">Senin - Sabtu (Minggu Tutup)</p>
+                <p className="mt-1 text-2xl font-black">09.00 - 21.00 WIB</p>
               </div>
             </div>
           </div>
@@ -555,17 +555,25 @@ function Location() {
           </p>
           <h2 className="text-3xl font-black sm:text-4xl">Datang dan rasakan suasananya</h2>
           <div className="mt-8 space-y-5 text-white/72">
-            <p className="flex gap-3">
+            <a
+              href="https://maps.app.goo.gl/gB6SUje7kWUJC4fx7?g_st=iw"
+              target="_blank"
+              rel="noreferrer"
+              className="flex gap-3 transition-colors hover:text-sunshine-orange"
+            >
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
-              Jalan Kapten Suparman, Potrobangsan, Kecamatan Magelang Utara, Kota Magelang.
-            </p>
-            <p className="flex gap-3">
+              <span>Jalan Kapten Suparman, Potrobangsan, Kecamatan Magelang Utara, Kota Magelang.</span>
+            </a>
+            <div className="flex gap-3">
               <Clock className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
-              Buka setiap hari, 10.00 - 22.00 WIB
-            </p>
+              <div>
+                <p>Senin - Sabtu: 09.00 - 21.00 WIB</p>
+                <p className="text-xs font-bold text-rose-500 mt-0.5">Minggu Tutup</p>
+              </div>
+            </div>
             <p className="flex gap-3">
               <Phone className="mt-1 h-5 w-5 shrink-0 text-sunshine-orange" />
-              WhatsApp: +62 812-2737-1024
+              <span>WhatsApp: +62 812-2737-1024</span>
             </p>
           </div>
           <a
@@ -587,7 +595,7 @@ function Location() {
         >
           <iframe
             title="Peta Kedai Sunshine88"
-            src="https://www.google.com/maps?q=Jalan%20Kapten%20Suparman%2C%20Potrobangsan%2C%20Kecamatan%20Magelang%20Utara%2C%20Kota%20Magelang&output=embed"
+            src="https://www.google.com/maps?q=Kedai%20sunshine88%2C%20Jl.%20Kapten%20Suparman%2C%20Potrobangsan%2C%20Kec.%20Magelang%20Utara%2C%20Kota%20Magelang&output=embed"
             className="h-full min-h-[420px] w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
